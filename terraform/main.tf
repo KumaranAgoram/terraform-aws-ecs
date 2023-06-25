@@ -87,7 +87,7 @@ resource "aws_ecs_service" "ecs-service" {
   name            = "362255_Bayer_ECSService2"
   cluster         = "${aws_ecs_cluster.cluster1.id}"
   task_definition = "${aws_ecs_task_definition.task_def.arn}"
-  desired_count   = 1
+  desired_count   = 0
   launch_type     = "FARGATE"
 
   network_configuration {
