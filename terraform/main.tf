@@ -67,8 +67,8 @@ resource "aws_ecs_task_definition" "task_def" {
       "essential": true,
       "portMappings": [
         {
-          "containerPort": 8080,
-          "hostPort": 8080
+          "containerPort": 8082,
+          "hostPort": 8082
         }
       ],
       "memory": 3072,
